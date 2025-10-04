@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>My Notes App</title>
+  
+  <!-- HTML -->
+  <!-- Create, edit, delete & save notes -->
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+      <!-- This is the header-->
+    <div class="notes-app-screen">
+      <div class="head">
+        <button class="notesmanu">☰</button>
+        <b>My Notes</b>
+      </div>
+        <!-- This is the main Screen-->
+      <div class="main-Use">
+          <!-- Side bar Manu-->
+        <div class="manu">
+          <ul class="manu-list">
+            <li><a href="#" onclick="create_note()">Write</a></li>
+            <li><a href="#" onclick="search_note()">See your Notes</a></li>
+          </ul>
+        </div>
+          <!-- A TextArea(Note Writing area) of My Notes-->
+        <div class="Noting">
+          <input type="text" name="note-title" id="note-title" placeholder="Note title:" />
+          <textarea name="Note" id="Note" rows="29" cols="40" placeholder="Start taking notes.."></textarea>
+          <button class="Note-btn" onclick="saving_note()">Save</button>
+        </div>
+          <!-- Area for showing Your saved Notes-->
+        <div class="All-notes">
+          <div class="all-notes">
+            <ul class="notes-list">
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+
+</html>

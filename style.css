@@ -1,0 +1,198 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* structuring the App body*/
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container {
+        height: 625px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+     /* Screen for creating & showing notes*/
+    .notes-app-screen {
+        border: none;
+        border-radius: 15px;
+        background: linear-gradient(#222222, #696969);
+        box-shadow: 0px 4px 8px #2C2C2C;
+        color: #A0A0A0;
+        height: 600px;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /**/
+    .notesmanu {
+        border: 1px solid #909090;
+        background: transparent;
+        color: #A5A3A3;
+        padding: 1px 5px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    
+    .Note-btn {
+        padding: 5px 15px;
+        background: #606060;
+        border-radius: 15px;
+        color: #A5A3A3;
+        border: none;
+        box-shadow: 0px 3px 8px #0F0F0F;
+    }
+        /*Code designing the header*/
+    .head {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    
+    .main-Use {
+        height: 535px;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+        /* Designing Side Bar manu*/
+    .manu {
+        height: 531px;
+        width: 250px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        box-shadow: 0px 4px 8px #0A0A0A;
+        border: none;
+        transform: translateX(-300px);
+        opacity: 0;
+        transition: all 0.3s ease;
+        background: linear-gradient(#222222, #696969);
+        position: fixed;
+    }
+    
+        /*Creating Slide Animation by Making changes transform opacity*/
+    .manu.active {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+        /*Cleaning & Designing the list*/
+    .manu-list {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+        list-style: none;
+    }
+    
+    .manu-list li {
+        margin: 25px;
+        
+    }
+    
+    .manu-list li a {
+        border: 1px solid #5F5F5F;
+        text-decoration: none;
+        color: #A39E9E;
+        padding: 3px 9px;
+        border-radius: 15px;
+    }
+    
+       /*Designing Notes saves area, where notes will appear*/
+    .Notes-Scr {
+        height: 500px;
+        width: 100%;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+        /*Designing create note screen*/
+    #Note {
+        border: 2px solid black;
+        border-radius: 10px;
+        background: linear-gradient(#131313, #1D1D1D);
+        border: none;
+        color: #AAAAAA;
+    }
+        /*Designing write note title:  input*/
+    #note-title {
+        height: 25px;
+        width: 300px;
+        color: #ABA9A9;
+        border: 1px solid #32323b;
+        border-radius: 10px;
+        background: linear-gradient(#212121, #151515);
+        box-shadow: 0px 4px 8px #131313;
+    }
+    
+    #SNotes {
+        height: 25px;
+        border: 2px solid black;
+        width: 300px;
+    }
+    
+    #SDNotes {
+        height: 25px;
+        border: 2px solid black;
+        width: 300px;
+    }
+    
+    .All-notes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        /*Making Notes list Presentable*/
+    .notes-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: #ABA9A9;
+    }
+    
+    .Noting {
+        display: none;
+    }
+    
+    .All-notes {
+        display: none;
+    }
+    
+    .All-notes {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .delete-notes {
+        display: flex;
+        flex-direction: column;
+    }
+    /*Trying making it presentable for big screens*/
+    @media (width > 600px) {
+        .head {
+            width: 65%;
+        }
+    }
+ 
